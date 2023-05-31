@@ -1,1 +1,12 @@
-
+[
+    {
+        "first_name": "Tim",
+        "last_name": "Neufeld",
+        "rating": "1000"
+    },
+    {
+        "first_name": "Lucas",
+        "last_name": "Unger",
+        "rating": "1000"
+    }
+]
