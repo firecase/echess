@@ -1,12 +1,28 @@
-[
-    {
-        "first_name": "Tim",
-        "last_name": "Neufeld",
-        "rating": "1000"
-    },
-    {
-        "first_name": "Lucas",
-        "last_name": "Unger",
-        "rating": "1000"
-    }
-]
+{
+    "players": [
+        {
+            "first_name": "Tim",
+            "last_name": "Neufeld",
+            "rating": "984",
+            "win": "0",
+            "draw": "0",
+            "loss": "0"
+        },
+        {
+            "first_name": "Lucas",
+            "last_name": "Unger",
+            "rating": "1000",
+            "win": "0",
+            "draw": "0",
+            "loss": "0"
+        },
+        {
+            "first_name": "Andrew",
+            "last_name": "Jeyathasan",
+            "rating": "996",
+            "win": "0",
+            "draw": "0",
+            "loss": "0"
+        }
+    ]
+}

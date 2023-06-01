@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "sharetechmono";
+    src: url("/php/fonts/sharetechmono.ttf") format("truetype");
+}
+
+:root {
+    font-family: sharetechmono;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main {
+    flex: 1;
+    margin: 0 100px;
+}
+
+a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+a:not(.navigation-link)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform .3s ease-in-out;
+}
+
+a:not(.navigation-link):hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a.navigation-link {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+a.navigation-link:hover {
+    background: #ddd;
+}
+
+a.navigation-link.aktiv {
+    background: #ddd;
+}
+
+.rating {
+    background: rgb(149, 223, 70);
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.players-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+}
+
+.players-table tr:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.players-table tr:nth-of-type(even) {
+    background: #ccc;
+}
+
+.players-table tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+.players-table tr > td:first-child,
+.players-table tr > td:last-child {
+    width: 0;
+}
+
+.players-table tr:first-child td {
+    padding: 10px 10px;
+}
+
+.players-table tr:not(:first-child) td {
+    padding: 20px 10px;
+}
+
+.players-table tr > td:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.players-table tr > td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+footer {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
